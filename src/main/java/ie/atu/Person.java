@@ -5,6 +5,8 @@ public class Person {
     private  String address;
     private  String phone;
 
+
+
     public Person(){
         this.name = "";
         this.address = "";
@@ -37,5 +39,13 @@ public class Person {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
